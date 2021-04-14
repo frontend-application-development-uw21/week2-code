@@ -1,23 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
+import Picture from './Picture';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Front-End Development
-        </a>
-      </header>
+      <Picture
+        picture="https://media.giphy.com/media/QvBoMEcQ7DQXK/giphy.gif"
+        description="Happy dog with a wagging tail (Beagle?)"
+      />
+      <label htmlFor="dogName">Dog name</label>
+      <input id="dogName" />
     </div>
   );
 }
